@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --max-width: 75rem;
+  --spacing-reg: 1rem;
+  --spacing-dbl: calc(var(--spacing-reg) * 2);
+  --spacing-hlf: calc(var(--spacing-reg) / 2);
+  --color-primary: blue;
+  --color-primary-dark: darkblue;
+  --black-tint-100: rgba(0, 0, 0, 0.1);
+  --box-shadow: 0 0 6rem var(--black-tint-100);
+}
+
+&&::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  padding: 2rem;
+}
+
+.wrapper {
+  border: 1px solid grey;
+  width: var(--max-width);
+  margin: auto;
+}

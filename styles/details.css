@@ -1,0 +1,77 @@
+/* -------------------destination element region */
+
+.destination {
+  display: flex;
+}
+
+/* -----------left  */
+.destination__left {
+  display: flex;
+  position: relative;
+  width: 50%;
+  padding: 2% 2% 2% 0;
+}
+
+.destination__image {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+}
+
+.destination__icon {
+  position: absolute;
+  top: 6%;
+  right: 8%;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 4%;
+  /* right: 2vw; */
+}
+
+/* ---------right  */
+.destination__right {
+  width: 50%;
+  padding: 15% 12% 15% 3%;
+}
+
+.destination__headline,
+.destination__subtitle,
+.destination__review {
+  margin-bottom: 4%;
+}
+
+.destination__headline {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.destination__subtitle {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.destination__review,
+.destination__details-text,
+.destination__details-facilities {
+  font-size: 0.8rem;
+}
+
+.destination__review {
+  text-align: center;
+  padding: 0 18%;
+}
+
+.destination__details {
+  padding: 0 2%;
+}
+
+.destination__details-headline {
+  font-size: 1rem;
+  margin-top: 5%;
+}
+
+.destination__details-facilities {
+  margin: 2% 0 2% 4%;
+}

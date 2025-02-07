@@ -1,0 +1,40 @@
+--------------forside list view .list__headline {
+  font-size: 2rem;
+  padding: 2% 0;
+}
+.listview {
+  padding: 0 0 0 2%;
+}
+
+.list {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 2%;
+}
+
+.listItem {
+  width: 23%;
+  list-style: none;
+}
+
+.listItem__image {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.listItem__prompts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4% 6% 4% 2%;
+  background-color: rgb(187, 228, 247);
+  margin-bottom: 4%;
+}
+
+.listItem__link {
+  text-decoration: none;
+  color: black;
+  margin: 0;
+}
