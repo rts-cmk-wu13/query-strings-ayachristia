@@ -1,0 +1,79 @@
+/* --------------forside list view ------------------- */
+
+.list__headline {
+  font-size: 2rem;
+  padding: 2% 0;
+}
+.listview {
+  padding: 0 2% 0 2%;
+}
+
+.list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1%;
+}
+
+.listItem {
+  width: 100%;
+}
+
+.listItem__image-container {
+  width: 100%;
+  height: 15rem;
+}
+
+.listItem__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.listItem__prompts {
+  background-color: rgb(190, 236, 250);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  padding: 6% 6%;
+}
+
+.material-symbols-outlined {
+  font-size: 0.8rem !important;
+}
+
+/* -------------media queries  -------------------------*/
+
+@media (width<1250px) {
+  .list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2%;
+  }
+
+  .listItem__image-container {
+    width: 100%;
+    height: 14rem;
+  }
+
+  .wrapper {
+    width: 40rem;
+  }
+}
+
+@media (width<650px) {
+  .list {
+    gap: 2%;
+  }
+
+  .wrapper {
+    width: 30rem;
+  }
+  .listItem__image-container {
+    width: 100%;
+    height: 12rem;
+  }
+}
