@@ -18,9 +18,11 @@ fetch(`/data/destinations.json`)
     destinationEl.innerHTML = `
     <section class="destination__left">
     
+    <section class="destination__image-container">
     <img src="${destination.image}" alt="${
       destination.title
     }" class="destination__image">
+    </section>
     <p class="destination__icon">
     <span class="material-symbols-outlined ">favorite</span> 
     Favorit
