@@ -5,7 +5,7 @@ fetch("/data/destinations.json")
   .then((data) => {
     const listViewEl = document.querySelector(".listview");
     listViewEl.innerHTML = `
-    <h1 class="list__headline">Apartments for rent</h1>
+    <h1 class="list__headline" id="headline">Apartments for rent</h1>
     `;
 
     const list = document.createElement("section");
@@ -16,16 +16,16 @@ fetch("/data/destinations.json")
       .map(function (destination) {
         return `
 
-      <section class="listItem">
-        <figure class="listItem__image-container">
+      <section class="listItem" aria-labelledby="headline" aria-label="${destination.title}">
+        <figure class="listItem__image-container" aria-label="apartmentImage">
       <a href="details.html?id=${destination.id}" class="listItem__link">
         <img src="${destination.image}" alt="${destination.title}" class="listItem__image">
     </a>
   </figure>
 
-      <div class="listItem__prompts">
-      <span class="material-symbols-outlined listItem__icon">favorite</span>
-      <a href="details.html?id=${destination.id}" class="listItem__link">More</a>
+      <div class="listItem__prompts" aria-label="apartmentNavigation">
+      <span class="material-symbols-outlined listItem__icon" aria-label="chooseFavorite" role="button">favorite</span>
+      <a href="details.html?id=${destination.id}" class="listItem__link" aria-label="chooseToSeeMore" role="button">More</a>
       </div>
       </section>
 
