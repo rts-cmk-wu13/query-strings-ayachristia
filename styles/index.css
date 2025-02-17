@@ -45,6 +45,10 @@
   font-size: 0.8rem !important;
 }
 
+.favorite__clicked {
+  background-color: red;
+}
+
 /* -------------media queries  -------------------------*/
 /* 
 @media (width<1250px) {
