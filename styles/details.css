@@ -23,15 +23,22 @@
   object-fit: cover;
 }
 
-.destination__icon {
+.destination__button {
   position: absolute;
   top: 6%;
   right: 8%;
+}
+
+.destination__icon {
   font-weight: bold;
   display: flex;
   align-items: center;
   gap: 4%;
   /* right: 2vw; */
+}
+
+.destination__favoritebtn--selected {
+  background-color: red;
 }
 
 /* ---------right ------------------- */

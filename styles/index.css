@@ -45,7 +45,7 @@
   font-size: 0.8rem !important;
 }
 
-.favorite__clicked {
+.listItem__favoritebtn--selected {
   background-color: red;
 }
 
