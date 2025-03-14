@@ -17,6 +17,11 @@ function readFromLocalStorage(key) {
   return JSON.parse(localStorage.getItem(key));
 }
 
+/**
+ *
+ * @param {string / number / boolean / object / any[]} key to be read from localStorage
+ * @returns
+ */
 function deleteFromLocalStorage(key) {
   localStorage.removeItem(key);
   return `The element with ${key} was deleted.`;
