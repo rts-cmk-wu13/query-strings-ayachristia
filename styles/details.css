@@ -24,22 +24,23 @@
 }
 
 .destination__button {
-  position: absolute;
-  top: 6%;
-  right: 8%;
-}
-
-.destination__icon {
-  font-weight: bold;
   display: flex;
   align-items: center;
-  gap: 4%;
-  /* right: 2vw; */
+  gap: 0.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: absolute;
+  top: 4%;
+  right: 4%;
+  color: white;
+}
+.destination__button span {
+  font-size: 24px;
 }
 
-.destination__favoritebtn--selected {
+/* .destination__favoritebtn--selected {
   background-color: red;
-}
+} */
 
 /* ---------right ------------------- */
 .destination__right {
@@ -68,6 +69,14 @@
 .destination__details-text,
 .destination__details-facilities {
   font-size: 0.8rem;
+}
+.destination__details-facilities {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.destination__details-facilities li {
+  list-style: circle;
 }
 
 .destination__review {

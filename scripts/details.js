@@ -26,14 +26,12 @@ fetch(`/data/destinations.json`)
       destination.title
     }" class="destination__image">
     </section>
-    <button class="destination__button ${
+    <button class="destination__button listItem__favoritebtn"  aria-label="chooseFavorite" role="button">
+    <span class="material-symbols-outlined ${
       favorite.includes("${destination.id}")
         ? "destination__favoritebtn--selected"
         : ""
-    }" data-favorite="${
-      destination.id
-    }" aria-label="chooseFavorite" role="button">
-    <span class="material-symbols-outlined destination__icon">favorite</span> 
+    }" data-favorite="${destination.id}">favorite</span> 
     Favorit
     </button>
     </section>
@@ -54,9 +52,11 @@ fetch(`/data/destinations.json`)
       }</p>
       <h2 class="destination__details-headline" id="overskrift" aria-label="facilities">Facilities</h2>
       <ul class="destination__details-facilities" aria-describedby="overskrift">
-    ${destination.facilities.map(function (facility) {
-      return `<li class="destination__facilitiesitem" aria-label="facility">${facility}</li>`;
-    })}</ul>
+    ${destination.facilities
+      .map(function (facility) {
+        return `<li class="destination__facilitiesitem" aria-label="facility">${facility}</li>`;
+      })
+      .join(" ")}</ul>
     </section>
     </section>
     `;
@@ -69,10 +69,10 @@ fetch(`/data/destinations.json`)
         if (favorite.includes(currentId)) {
           let newFavorite = favorite.filter((id) => id != currentId);
           favorite = newFavorite;
-          event.target.classList.remove("destination__favoritebtn--selected");
+          event.target.classList.remove("listItem__favoritebtn--selected");
         } else {
           favorite.push(currentId);
-          event.target.classList.add("destination__favoritebtn--selected");
+          event.target.classList.add("listItem__favoritebtn--selected");
         }
 
         saveToLocalStorage("favorite", favorite);
