@@ -22,7 +22,7 @@
 
 .listItem__image-container {
   max-width: 100%;
-  height: min(250px, 35vw);
+  height: min(250px, 30vw);
 }
 
 .listItem__image {
