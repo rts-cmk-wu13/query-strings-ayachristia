@@ -41,9 +41,13 @@
   padding: 6% 6%;
 }
 
-.material-symbols-outlined {
+/* .material-symbols-outlined {
   font-size: 0.8rem !important;
-}
+} */
+
+/* .listItem__favoritebtn--selected {
+  background-color: red;
+} */
 
 /* -------------media queries  -------------------------*/
 /* 
