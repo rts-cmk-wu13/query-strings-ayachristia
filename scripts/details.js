@@ -8,7 +8,7 @@ let id = params.get("id");
 
 console.log(params, id);
 
-fetch(`/data/destinations.json`)
+fetch(`./data/destinations.json`)
   .then((response) => response.json())
   .then((data) => {
     console.log(data.destinations);
@@ -22,41 +22,36 @@ fetch(`/data/destinations.json`)
 
     <section class="destination__left" aria-label="destinationImage">
     <section class="destination__image-container">
-    <img src="${destination.image}" alt="${
-      destination.title
-    }" class="destination__image">
+    <img src="${destination.image}" alt="${destination.title
+      }" class="destination__image">
     </section>
     <button class="destination__button listItem__favoritebtn"  aria-label="chooseFavorite" role="button">
-    <span class="material-symbols-outlined ${
-      favorite.includes("${destination.id}")
+    <span class="material-symbols-outlined ${favorite.includes("${destination.id}")
         ? "destination__favoritebtn--selected"
         : ""
-    }" data-favorite="${destination.id}">favorite</span> 
+      }" data-favorite="${destination.id}">favorite</span> 
     Favorit
     </button>
     </section>
 
     <section class="destination__right">
-    <h1 class="destination__headline" id="overskrift">${
-      destination.destination
-    }</h1>
-    <h2 class="destination__subtitle" aria-describedby="overskrift" aria-label="">${
-      destination.title
-    }</h2>
+    <h1 class="destination__headline" id="overskrift">${destination.destination
+      }</h1>
+    <h2 class="destination__subtitle" aria-describedby="overskrift" aria-label="">${destination.title
+      }</h2>
     <p class="destination__review" aria-label="costumerReview">
     <span class="destination__review-procent">100</span>% of new guests has given the place a <span class="destination__review-stjerner">5</span> stars rating.
     </p>
     <section class="destination__details" aria-labelledby="destinationInfo">
-      <p class="destination__details-text" id="destinationInfo">${
-        destination.text
+      <p class="destination__details-text" id="destinationInfo">${destination.text
       }</p>
       <h2 class="destination__details-headline" id="overskrift" aria-label="facilities">Facilities</h2>
       <ul class="destination__details-facilities" aria-describedby="overskrift">
     ${destination.facilities
-      .map(function (facility) {
-        return `<li class="destination__facilitiesitem" aria-label="facility">${facility}</li>`;
-      })
-      .join(" ")}</ul>
+        .map(function (facility) {
+          return `<li class="destination__facilitiesitem" aria-label="facility">${facility}</li>`;
+        })
+        .join(" ")}</ul>
     </section>
     </section>
     `;
