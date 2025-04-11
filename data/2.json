@@ -1,6 +1,6 @@
 {
     "id": 2,
-    "image": "ecuador.webp",
+    "image": "./img/ecuador.webp",
     "destination": "Ecuador",
     "title": "Apartment with big terasse",
     "subtitle": "the beautiful mountain range 'Sierra de las Nieves",

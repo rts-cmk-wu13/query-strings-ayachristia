@@ -1,7 +1,7 @@
 
 {
     "id": 7,
-    "image": "santorini.webp",
+    "image": "./img/santorini.webp",
     "destination": "Greece",
     "title": "Full home/apartment in Santorini, Greece",
     "subtitle": "the beautiful mountain range 'Sierra de las Nieves",
