@@ -7,7 +7,7 @@ console.log(favorites);
 //   favorites = [];
 // }
 
-fetch("/data/destinations.json")
+fetch("./data/destinations.json")
   .then((response) => response.json())
   .then((data) => {
     const listViewEl = document.querySelector(".listview");
@@ -20,29 +20,25 @@ fetch("/data/destinations.json")
     listEl.innerHTML = data.destinations
       .map(function (destination) {
         return `
-<section class="listItem" aria-labelledby="headline" aria-label="${
-          destination.title
-        }">
+<section class="listItem" aria-labelledby="headline" aria-label="${destination.title
+          }">
   <figure class="listItem__image-container" aria-label="apartmentImage">
     <a href="details.html?id=${destination.id}" class="listItem__link">
-      <img src="${
-        destination.image
-      }" alt="${destination.title}" class="listItem__image">
+      <img src="${destination.image
+          }" alt="${destination.title}" class="listItem__image">
     </a>
   </figure>
   
   <div class="listItem__prompts" aria-label="apartmentNavigation">
-    <button class="listItem__favoritebtn"><span class="material-symbols-outlined destination__icon ${
-      favorites.includes(destination.id.toString())
-        ? "listItem__favoritebtn--selected"
-        : ""
-    }" data-favorite="${destination.id}">favorite</span> 
+    <button class="listItem__favoritebtn"><span class="material-symbols-outlined destination__icon ${favorites.includes(destination.id.toString())
+            ? "listItem__favoritebtn--selected"
+            : ""
+          }" data-favorite="${destination.id}">favorite</span> 
       <!-- <span class="material-symbols-outlined listItem__icon" aria-label="chooseFavorite" role="button" id="id" >favorite</span> -->
     </button>
     
-    <a href="details.html?id=${
-      destination.id
-    }" class="listItem__link" aria-label="chooseToSeeMore" role="button">More</a>
+    <a href="details.html?id=${destination.id
+          }" class="listItem__link" aria-label="chooseToSeeMore" role="button">More</a>
   </div>
 </section>
 `;
