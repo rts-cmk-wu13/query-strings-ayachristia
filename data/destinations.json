@@ -2,7 +2,7 @@
   "destinations": [
     {
       "id": 1,
-      "image": "/img/andalucia.webp",
+      "image": "./img/andalucia.webp",
       "destination": "Spain",
       "title": "Full home/apartment in Andalucia, Spanien",
       "subtitle": "the beautiful mountain range 'Sierra de las Nieves",
@@ -16,7 +16,7 @@
     },
     {
       "id": 2,
-      "image": "/img/ecuador.webp",
+      "image": "./img/ecuador.webp",
       "destination": "Ecuador",
       "title": "Apartment with big terasse",
       "subtitle": "the beautiful mountain range 'Sierra de las Nieves",
@@ -25,7 +25,7 @@
     },
     {
       "id": 3,
-      "image": "/img/greece.jpg",
+      "image": "./img/greece.jpg",
       "destination": "Greece",
       "title": "Full home/apartment in Athens, Spanien",
       "subtitle": "the beautiful mountain range 'Sierra de las Nieves",
@@ -39,7 +39,7 @@
     },
     {
       "id": 4,
-      "image": "/img/norway.webp",
+      "image": "./img/norway.webp",
       "destination": "Norway",
       "title": "Full home/apartment in Trondheim, Norway",
       "subtitle": "Enjoy the fantastic northern lights",
@@ -48,7 +48,7 @@
     },
     {
       "id": 5,
-      "image": "/img/pigraitaly.jpg",
+      "image": "./img/pigraitaly.jpg",
       "destination": "Italy",
       "title": "Full home/apartment in Pigra, Italien",
       "subtitle": "Beatiful spot close to the Como Lake",
@@ -62,7 +62,7 @@
     },
     {
       "id": 6,
-      "image": "/img/rome.webp",
+      "image": "./img/rome.webp",
       "destination": "Italy",
       "title": "Full home/apartment in Rome, Italy",
       "subtitle": "PERFECT FOR A ROMANTIC HOLIDAY IN THE CENTER OF ROME",
@@ -76,7 +76,7 @@
     },
     {
       "id": 7,
-      "image": "/img/santorini.webp",
+      "image": "./img/santorini.webp",
       "destination": "Greece",
       "title": "Full home/apartment in Santorini, Greece",
       "subtitle": "the beautiful mountain range 'Sierra de las Nieves",
@@ -90,7 +90,7 @@
     },
     {
       "id": 8,
-      "image": "/img/spain.jpg",
+      "image": "./img/spain.jpg",
       "destination": "Spain",
       "title": "Full home/apartment in Alozaina, Spanien",
       "subtitle": "the beautiful mountain range 'Sierra de las Nieves",
